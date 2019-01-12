@@ -23,7 +23,7 @@
     //temp given in Kevlins subtract + 273.15
     if(empty($_GET['city'])== false)  {
     $city = $_GET['city'];
-    $content = curl("https://api.openweathermap.org/data/2.5/weather?q=".$city."&appid=4e9ac87c6e627ffab1ca4b8e8ca6a739");
+    $content = curl("https://api.openweathermap.org/data/2.5/weather?q=".$city."&appid={YOURAPIKEY}");
     // $citiesContent = curl("cities.json");
     // $cities = json_decode($citiesContent,true);
     $weatherArray = json_decode($content, true);
